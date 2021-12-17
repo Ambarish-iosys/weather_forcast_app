@@ -1,6 +1,11 @@
 # Weather Forcast App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Weather Forcast app build specially to see weather of the day and  particular city.
+Then you will get weather details of including temp,humidity ect.
+
+Example:
+
+![Main-page](https://user-images.githubusercontent.com/55125422/146496130-d2a3eca4-aa2f-4cb9-bd30-0d5be20a63df.png)
 
 ## Available Scripts
 
