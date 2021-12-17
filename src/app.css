@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.App-container {
+    background: linear-gradient(45deg, #130b59, #010103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 .9rem;
+}
+input.weather-input {
+    min-height: 15px;
+    border-radius: 30px;
+    padding: 1rem;
+    font-size: 16px;
+    outline: none;
+    min-width:600px;
+    font-weight:600;
+}
+
+.city-contaier {
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1.9rem;
+    margin: 3rem auto auto;
+    position: relative;
+    box-shadow: inset 1px 7px 13px 0px #fff, 0px 1px 4px 10px #000;
+    max-width:400px;
+    width:100%;
+}
+.city-contaier h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+span.sub-city {
+    background: orange;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+    margin-left: .3rem;
+}
+
+.city-temp {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: .4rem;
+}
+h1{
+    color: #fff;
+    margin-top: 1rem;
+}
+input.weather-input::after {content: '';display: block;width: 100%;position: absolute;height: 3px;border-bottom: 2px solid #fff;}
+
+.city-contaier:before {content: '';display: block;width: 100%;height: 4px;background: #fff;position: absolute;left: 0;top: -20px;border-radius: 5px;}
+.heading-1 {
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+    .heading-1 {
+        font-size:48px
+    }
+    input.weather-input{
+        min-width:100%;
+    }
+}
+.city-temp,.wether-data,.humidity,.wind {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem
+}
+
+span.icon {
+    flex: 1 0 auto;
+}
+
+span.text-content {
+    flex: 4;
+    font-weight:bold;
+}
+span.icon svg {
+    width: 30px;
+    text-align: left;
+    height: 30px;
+}
+span.icon.icon-temp {
+    margin-left: 5px;
+}
